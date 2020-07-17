@@ -163,7 +163,7 @@ Following is the code for creating a deployment for Grafana
                 name: grafana-config 
 
 
-### Create a sevice for exposing Prometheus and Grafana
+### Create a service for exposing Prometheus and Grafana
 
 Following is the code for creating a service for Prometheus
 
