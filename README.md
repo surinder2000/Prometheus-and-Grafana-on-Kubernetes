@@ -200,7 +200,7 @@ Following is the code for creating a service for Grafana
       type: NodePort
       
       
- Now we have two ways for deploying Prometheus and Grafana on top of Kubenetes in single go. First one is put all the code of Prometheus in one file and all the code of Grafana in one file, seprate each kind in Prometheus file as well as in Grafana file by this --- (Three hyphen). Second one is kustomization file, put all the files of Prometheus in one kustomization file and all the files of Grafana in one kustomization file and use the respective command for deploying Prometheus and Grafana on Kubernetes
+ Now we have two ways for deploying Prometheus and Grafana on top of Kubernetes in single go. First one is put all the code of Prometheus in one file and all the code of Grafana in one file, separate each kind in Prometheus file as well as in Grafana file by this --- (Three hyphen). Second one is kustomization file, put all the files of Prometheus in one kustomization file and all the files of Grafana in one kustomization file. Use the respective commands for deploying Prometheus and Grafana on Kubernetes
  
  I am using the first way for deploying Prometheus and Grafana on top of Kubernetes
  
@@ -213,5 +213,7 @@ Following is the code for creating a service for Grafana
     kubectl create -f grafana-deployment.yaml
     
  Here, prom-deployment.yaml is the deployment file of Prometheus and grafana-deployment.yaml is the deployment file of Grafana
+ 
+ To access the console of Prometheus and Grafana, use **minikubeIP:nodePort** in the browser  
  
  ### Thank you
